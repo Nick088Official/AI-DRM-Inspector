@@ -1,0 +1,14 @@
+# Secrets and Environment Variables 
+.env
+
+# Python Virtual Environment
+venv/
+
+# Bytecode and compiled files that Python generates automatically
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# the runtime cache file 
+cache.json

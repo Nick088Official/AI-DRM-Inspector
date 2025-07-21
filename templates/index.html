@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steam DRM Checker</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Steam Library DRM Checker</h1>
+    <p class="lead">Note: This tool relies on an AI-Response with a Realtime Google Web Search to automatically search your entire Steam library in 1-click, it may produce incorrect results.</p>
+
+    <!-- Form for User Input -->
+    <div class="form-row">
+        <div class="form-group">
+            <label for="ai-model-select"><strong>1. Choose AI Model:</strong></label>
+            <select id="ai-model-select" class="form-control">
+                <option value="gemini">Google Gemini (2.5 pro)</option>
+                <option value="groq">Groq (Kimi 2 Instuct)</option>
+                <option value="ollama">Ollama (Gemma 3n e2b)</option>
+            </select>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="steamInput">
+                <strong>2. Enter your SteamID64 / CustomURL:</strong>
+            </label>
+            <input type="text" id="steamInput" class="form-control" placeholder="76561197960287930 / gabelogannewell">
+        </div>
+    </div>
+
+    <button id="checkButton" class="btn btn-primary">Check My Games</button>
+
+    <div id="loader" style="display: none;">
+        <div role="status">
+            <span>Loading...</span>
+        </div>
+        <p>Fetching your games from Steam...</p>
+    </div>
+    
+    <div id="results"></div>
+
+    <div class="footer">
+        <p>Made with ❤️ by <a href="https://linktr.ee/Nick088" target="_blank">Nick08</a>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

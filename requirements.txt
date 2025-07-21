@@ -1,0 +1,7 @@
+python-dotenv==1.1.1
+Flask==3.1.1
+requests==2.32.4
+google-genai==1.26.0
+google-api-python-client==2.176.0
+groq==0.30.0
+ollama==0.5.1
