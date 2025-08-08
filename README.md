@@ -86,10 +86,9 @@ SEARCH_ENGINE_ID="YOUR_PROGRAMMABLE_SEARCH_ENGINE_ID"
 *   **`GROQ_API_KEY`**: Create an account and get your key from the [GroqCloud Console](https://console.groq.com/keys).
 *   **`GOOGLE_SEARCH_API_KEY`** & **`SEARCH_ENGINE_ID`**:
     1.  Create a project in the [Google Cloud Console](https://console.cloud.google.com/).
-    2.  Enable the **Custom Search API** for your project.
-    3.  Under "Credentials", create an API key. This will be your `GOOGLE_SEARCH_API_KEY`.
-    4.  Go to the [Programmable Search Engine control panel](https://programmablesearchengine.google.com/controlpanel/all) to create a new search engine.
-    5.  In the setup, under "Sites to search", add the following URLs to ensure focused and relevant results:
+    3.  Go to the [Programmable Search Engine control panel](https://programmablesearchengine.google.com/controlpanel/all) to create a new search engine.
+    4.  Get your API key via "Programmatic Access". This will be your `GOOGLE_SEARCH_API_KEY`.
+    5.  Under "Sites to search", add the following URLs to ensure focused and relevant results:
         *   `store.steampowered.com/app/*`
         *   `store.steampowered.com/curator/44556220-DRM-Checker/*`
         *   `store.steampowered.com/curator/38523697-DRM-FREE-GAMES/*`
